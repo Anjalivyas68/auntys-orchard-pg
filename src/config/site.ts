@@ -14,16 +14,16 @@ export const siteConfig = {
   url: "https://auntys-orchard-pg.vercel.app",
 
   // PLACEHOLDER: full number with country code, e.g. "+919876543210"
-  phone: "+91XXXXXXXXXX",
+  phone: "+917906106313",
   // PLACEHOLDER: digits only, country code first, no "+" — e.g. "919876543210"
-  whatsapp: "91XXXXXXXXXX",
+  whatsapp: "917906106313",
   // PLACEHOLDER
-  email: "hello@auntysorchardpg.com",
+  email: "mayurenterprises.rke@gmail.com",
   // PLACEHOLDER: add the full street address when confirmed.
-  address: "Roorkee, Uttarakhand, India",
+  address: "648, Janak Raj Kunj, Sainik Colony, Near Canal View Apartments, Roorkee, Uttarakhand, India",
 
   // PLACEHOLDER: link used by "Get Directions" (a Google Maps share link).
-  mapsUrl: "#",
+  mapsUrl: "https://share.google/LHmhX0bsyVVcBXK7V",
   // PLACEHOLDER: the "src" URL from Google Maps → Share → Embed a map. Leave empty to show the map card.
   mapsEmbedUrl: "",
 
