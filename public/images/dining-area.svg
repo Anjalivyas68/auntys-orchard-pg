@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a dining area">
+<rect width="800" height="600" fill="#F6EFE4"/>
+<rect y="430" width="800" height="170" fill="#E3D9C6"/><rect y="425" width="800" height="8" fill="#D2C6AE"/><ellipse cx="400" cy="400" rx="230" ry="50" fill="#fff" stroke="#244C3A" stroke-width="5"/><rect x="390" y="400" width="20" height="80" fill="#244C3A"/><rect x="150" y="340" width="70" height="90" rx="8" fill="#5F7D60"/><rect x="580" y="340" width="70" height="90" rx="8" fill="#5F7D60"/><circle cx="330" cy="385" r="22" fill="#E8B89A"/><circle cx="470" cy="385" r="22" fill="#E8B89A"/><circle cx="400" cy="395" r="22" fill="#EAF0E7"/><rect x="325" y="80" width="150" height="170" rx="8" fill="#F6FAF4" stroke="#5F7D60" stroke-width="6"/><line x1="400" y1="80" x2="400" y2="250" stroke="#5F7D60" stroke-width="4"/><circle cx="365" cy="130" r="22" fill="#F4D9C3"/>
+<text x="400" y="575" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#66736B">Placeholder illustration – replace with a real photo</text>
+</svg>
