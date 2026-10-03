@@ -25,7 +25,7 @@ export const siteConfig = {
   // PLACEHOLDER: link used by "Get Directions" (a Google Maps share link).
   mapsUrl: "https://share.google/LHmhX0bsyVVcBXK7V",
   // PLACEHOLDER: the "src" URL from Google Maps → Share → Embed a map. Leave empty to show the map card.
-  mapsEmbedUrl: "",
+  mapsEmbedUrl: "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.443694931249!2d77.88152219999999!3d29.861303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3fe73d6838d%3A0x35253207a4938714!2sAunty's%20Orchard%20PG!5e1!3m2!1sen!2sin!4v1791042089716!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>",
 
   // Optional: add real profile URLs. Empty strings are hidden automatically.
   social: {
