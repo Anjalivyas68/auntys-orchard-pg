@@ -15,9 +15,9 @@ export type GalleryItem = {
 };
 
 export const heroImage = {
-  src: "/images/hero-pg.svg",
+  src: "/images/hero-pg.jpg",
   alt: "Placeholder illustration of a bright, tidy shared room — replace with a real photo of the property",
-  isPlaceholder: true,
+  isPlaceholder: false,
 };
 
 export const galleryItems: GalleryItem[] = [
