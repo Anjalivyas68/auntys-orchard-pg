@@ -24,9 +24,9 @@ export const galleryItems: GalleryItem[] = [
   {
     title: "Double Occupancy Room",
     caption: "Comfortable shared accommodation with ample personal space.",
-    src: "/images/double-room.svg",
+    src: "/images/double-room.jpg",
     alt: "Placeholder illustration for the double occupancy room",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     title: "Triple Sharing Room",
