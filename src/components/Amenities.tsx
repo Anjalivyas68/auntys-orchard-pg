@@ -5,9 +5,10 @@ export default function Amenities() {
   return (
     <section id="facilities" className="section-pad">
       <div className="container-page">
-        <Reveal className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto text-center">
           <p className="eyebrow">Facilities &amp; amenities</p>
-          <h2 className="section-title">Everything You Need for Comfortable Living</h2>
+          {/* Single line on laptop/desktop; wraps naturally on phones and tablets so it never overflows. */}
+          <h2 className="section-title lg:whitespace-nowrap">Everything You Need for Comfortable Living</h2>
         </Reveal>
 
         {/* Layout adapts to the number of cards: 4 cards sit in one row on large screens, 3 or 6 in rows of three. */}
