@@ -10,7 +10,12 @@ export default function Amenities() {
           <h2 className="section-title">Everything You Need for Comfortable Living</h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Layout adapts to the number of cards: 4 cards sit in one row on large screens, 3 or 6 in rows of three. */}
+        <div
+          className={`mt-12 grid gap-6 sm:grid-cols-2 ${
+            amenityGroups.length === 4 ? "xl:grid-cols-4" : "lg:grid-cols-3"
+          }`}
+        >
           {amenityGroups.map((group, i) => (
             <Reveal key={group.title} delay={(i % 3) * 80}>
               <article className="card h-full">
