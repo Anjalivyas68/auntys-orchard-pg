@@ -15,10 +15,6 @@ import {
   DoorClosed,
   ShieldCheck,
   UserCog,
-  Sparkles,
-  Wrench,
-  Home,
-  Bath,
   type LucideIcon,
 } from "lucide-react";
 
@@ -67,16 +63,6 @@ export const amenityGroups: AmenityGroup[] = [
       { label: "Secure Entry", icon: DoorClosed },
       { label: "Safe Environment for Residents", icon: ShieldCheck },
       { label: "On-Site Management Support", icon: UserCog },
-    ],
-  },
-  {
-    title: "Cleanliness",
-    icon: Sparkles,
-    items: [
-      { label: "Daily Housekeeping", icon: Sparkles },
-      { label: "Regular Maintenance", icon: Wrench },
-      { label: "Clean Common Areas", icon: Home },
-      { label: "Hygienic Washrooms", icon: Bath },
     ],
   },
 ];
