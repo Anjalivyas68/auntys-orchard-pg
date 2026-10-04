@@ -59,8 +59,8 @@ export const galleryItems: GalleryItem[] = [
   {
     title: "Outdoor Spaces",
     caption: "Enjoy fresh air and peaceful surroundings inspired by nature.",
-    src: "/images/outdoor.svg",
+    src: "/images/outdoor.jpg",
     alt: "Placeholder illustration for the outdoor spaces",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
 ];
