@@ -1,10 +1,10 @@
 /**
  * TESTIMONIALS
  * ------------
- * DEVELOPER NOTE: The entries below are clearly labelled PLACEHOLDERS, not real reviews.
- * Before public launch, replace them with genuine resident reviews (with permission),
- * set `isPlaceholder` to false, and fill in name, residentType, rating and review.
- * If you have no real reviews yet, set `showTestimonials` to false to hide the section.
+ * DEVELOPER NOTE: The three entries below are PLACEHOLDERS, not real reviews.
+ * Replace each one with a genuine resident review (with permission): write the review text,
+ * the resident's name, and what they do, then set `isPlaceholder` to false.
+ * To hide the whole section, set `showTestimonials` to false.
  */
 export type Testimonial = {
   name: string;
@@ -17,25 +17,7 @@ export type Testimonial = {
 export const showTestimonials = true;
 
 export const testimonials: Testimonial[] = [
-  {
-    name: "Resident Name",
-    residentType: "Student / Working Professional",
-    rating: 5,
-    review: "A genuine resident review will appear here once collected.",
-    isPlaceholder: true,
-  },
-  {
-    name: "Resident Name",
-    residentType: "Student / Working Professional",
-    rating: 5,
-    review: "A genuine resident review will appear here once collected.",
-    isPlaceholder: true,
-  },
-  {
-    name: "Resident Name",
-    residentType: "Student / Working Professional",
-    rating: 5,
-    review: "A genuine resident review will appear here once collected.",
-    isPlaceholder: true,
-  },
+  { name: "", residentType: "", rating: 5, review: "Review 1", isPlaceholder: true },
+  { name: "", residentType: "", rating: 5, review: "Review 2", isPlaceholder: true },
+  { name: "", residentType: "", rating: 5, review: "Review 3", isPlaceholder: true },
 ];

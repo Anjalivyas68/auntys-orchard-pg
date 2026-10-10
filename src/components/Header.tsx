@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X, Leaf } from "lucide-react";
-import { navLinks, siteConfig } from "@/config/site";
+import { siteConfig, whatsappHref } from "@/config/site";
+import { navLinks, content } from "@/config/nav";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,6 +23,8 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  const wa = whatsappHref(content.whatsappMessage);
+
   return (
     <header
       className={`sticky top-0 z-50 transition-colors duration-200 ${
@@ -38,7 +41,7 @@ export default function Header() {
           {siteConfig.name}
         </a>
 
-        <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Main" className="hidden items-center gap-6 xl:flex">
           {navLinks.map((l) => (
             <a
               key={l.href}
@@ -51,12 +54,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#contact" className="btn btn-primary hidden !min-h-[44px] !px-5 !py-2 text-[15px] sm:inline-flex">
-            Book a Visit
+          <a
+            href={wa}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary hidden !min-h-[44px] !px-5 !py-2 text-[15px] sm:inline-flex"
+          >
+            Check Availability
           </a>
           <button
             type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-forest/20 text-forest lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-forest/20 text-forest xl:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -71,7 +79,7 @@ export default function Header() {
         <nav
           id="mobile-menu"
           aria-label="Mobile"
-          className="border-t border-forest/10 bg-cream lg:hidden"
+          className="border-t border-forest/10 bg-cream xl:hidden"
         >
           <ul className="container-page flex flex-col py-3">
             {navLinks.map((l) => (
@@ -86,8 +94,14 @@ export default function Header() {
               </li>
             ))}
             <li className="pt-4">
-              <a href="#contact" onClick={() => setOpen(false)} className="btn btn-primary w-full">
-                Book a Visit
+              <a
+                href={wa}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="btn btn-primary w-full"
+              >
+                Check Availability
               </a>
             </li>
           </ul>

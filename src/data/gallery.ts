@@ -8,59 +8,52 @@
  */
 export type GalleryItem = {
   title: string;
-  caption: string;
   src: string;
   alt: string;
   isPlaceholder: boolean;
 };
 
 export const heroImage = {
-  src: "/images/hero-pg.jpg",
+  src: "/images/hero-pg.svg",
   alt: "Placeholder illustration of a bright, tidy shared room — replace with a real photo of the property",
-  isPlaceholder: false,
+  isPlaceholder: true,
 };
 
 export const galleryItems: GalleryItem[] = [
   {
-    title: "Double Occupancy Room",
-    caption: "Comfortable shared accommodation with ample personal space.",
-    src: "/images/double-room.jpg",
-    alt: "Placeholder illustration for the double occupancy room",
-    isPlaceholder: false,
+    title: "Double Sharing Room",
+    src: "/images/double-room.svg",
+    alt: "Placeholder illustration for the double sharing room",
+    isPlaceholder: true,
   },
   {
     title: "Triple Sharing Room",
-    caption: "Comfortable shared accommodation designed for practical and affordable living.",
     src: "/images/triple-room.svg",
     alt: "Placeholder illustration for the triple sharing room",
     isPlaceholder: true,
   },
   {
-    title: "Study Area",
-    caption: "Dedicated spaces designed for productivity and concentration.",
-    src: "/images/study-area.svg",
-    alt: "Placeholder illustration for the study area",
+    title: "Washrooms",
+    src: "/images/washroom.svg",
+    alt: "Placeholder illustration for the washrooms",
     isPlaceholder: true,
   },
   {
     title: "Dining Area",
-    caption: "Clean and welcoming environment for daily meals.",
     src: "/images/dining-area.svg",
     alt: "Placeholder illustration for the dining area",
     isPlaceholder: true,
   },
   {
-    title: "Common Lounge",
-    caption: "Relax, socialize, and unwind after a busy day.",
+    title: "Common Sitting Area",
     src: "/images/common-area.svg",
-    alt: "Placeholder illustration for the common lounge",
+    alt: "Placeholder illustration for the common sitting area",
     isPlaceholder: true,
   },
   {
-    title: "Outdoor Spaces",
-    caption: "Enjoy fresh air and peaceful surroundings inspired by nature.",
-    src: "/images/outdoor.jpg",
-    alt: "Placeholder illustration for the outdoor spaces",
-    isPlaceholder: false,
+    title: "Building Facade",
+    src: "/images/facade.svg",
+    alt: "Placeholder illustration for the front of the building",
+    isPlaceholder: true,
   },
 ];

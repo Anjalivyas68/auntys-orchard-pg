@@ -1,5 +1,6 @@
 import { Leaf, MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
-import { navLinks, siteConfig, telHref, mailHref } from "@/config/site";
+import { siteConfig, telHref, mailHref } from "@/config/site";
+import { navLinks, content } from "@/config/nav";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -14,8 +15,7 @@ export default function Footer() {
             {siteConfig.name}
           </p>
           <p className="mt-3 max-w-xs leading-relaxed">
-            A warm, secure and welcoming place to stay in Roorkee for students and working
-            professionals.
+            A comfortable, well-managed PG in Roorkee for working professionals.
           </p>
           {(instagram || facebook) && (
             <div className="mt-4 flex gap-3">
@@ -59,7 +59,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <MapPin size={16} aria-hidden="true" className="mt-1 shrink-0" />
-              {siteConfig.address}
+              {content.locationAddress}
             </li>
           </ul>
         </div>

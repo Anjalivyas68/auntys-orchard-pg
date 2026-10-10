@@ -1,68 +1,23 @@
 import {
-  BedDouble,
-  Users,
-  Archive,
-  Armchair,
   Wifi,
+  UtensilsCrossed,
+  Sparkles,
   Zap,
   Droplets,
-  Shirt,
-  UtensilsCrossed,
-  ChefHat,
-  Soup,
   GlassWater,
-  Video,
-  DoorClosed,
-  ShieldCheck,
-  UserCog,
+  Shirt,
+  BedDouble,
   type LucideIcon,
 } from "lucide-react";
 
-export type AmenityGroup = {
-  title: string;
-  icon: LucideIcon;
-  items: { label: string; icon: LucideIcon }[];
-};
-
-export const amenityGroups: AmenityGroup[] = [
-  {
-    title: "Comfortable Living",
-    icon: BedDouble,
-    items: [
-      { label: "Fully Furnished Rooms", icon: BedDouble },
-      { label: "Double & Triple Sharing Options", icon: Users },
-      { label: "Comfortable Beds & Storage Space", icon: Archive },
-      { label: "Study Tables & Chairs", icon: Armchair },
-    ],
-  },
-  {
-    title: "Connectivity & Convenience",
-    icon: Wifi,
-    items: [
-      { label: "High-Speed Wi-Fi", icon: Wifi },
-      { label: "Power Backup", icon: Zap },
-      { label: "24/7 Water Supply", icon: Droplets },
-      { label: "Laundry Facility", icon: Shirt },
-    ],
-  },
-  {
-    title: "Food & Dining",
-    icon: UtensilsCrossed,
-    items: [
-      { label: "Fresh Home-Cooked Meals", icon: UtensilsCrossed },
-      { label: "Hygienic Kitchen", icon: ChefHat },
-      { label: "Healthy Breakfast & Dinner", icon: Soup },
-      { label: "Filtered Drinking Water", icon: GlassWater },
-    ],
-  },
-  {
-    title: "Safety & Security",
-    icon: ShieldCheck,
-    items: [
-      { label: "CCTV Surveillance", icon: Video },
-      { label: "Secure Entry", icon: DoorClosed },
-      { label: "Safe Environment for Residents", icon: ShieldCheck },
-      { label: "On-Site Management Support", icon: UserCog },
-    ],
-  },
+/** Short and visual: one icon and one label per amenity. Add or remove lines freely. */
+export const amenities: { label: string; icon: LucideIcon }[] = [
+  { label: "Wi-Fi", icon: Wifi },
+  { label: "Meals", icon: UtensilsCrossed },
+  { label: "Housekeeping", icon: Sparkles },
+  { label: "Power Backup", icon: Zap },
+  { label: "24/7 Water", icon: Droplets },
+  { label: "Filtered Water", icon: GlassWater },
+  { label: "Laundry", icon: Shirt },
+  { label: "Furnished Rooms", icon: BedDouble },
 ];

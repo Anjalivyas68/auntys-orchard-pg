@@ -32,11 +32,10 @@ export default function Gallery() {
   const item = active !== null ? galleryItems[active] : null;
 
   return (
-    <section id="rooms" className="section-pad">
+    <section id="gallery" className="section-pad">
       <div className="container-page">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="eyebrow">Rooms &amp; gallery</p>
-          <h2 className="section-title">Take a Look Around</h2>
+          <h2 className="section-title">See Where You&apos;ll Live</h2>
         </Reveal>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,9 +69,8 @@ export default function Gallery() {
                     <Expand size={16} aria-hidden="true" />
                   </span>
                 </button>
-                <figcaption className="p-5">
+                <figcaption className="px-5 py-4">
                   <h3 className="text-lg font-semibold text-forest">{g.title}</h3>
-                  <p className="mt-1 text-muted">{g.caption}</p>
                 </figcaption>
               </figure>
             </Reveal>
@@ -92,9 +90,7 @@ export default function Gallery() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-sage">
               <Image src={item.src} alt={item.alt} fill sizes="900px" className="object-cover" />
             </div>
-            <p className="mt-3 text-center text-white">
-              <span className="font-semibold">{item.title}</span> — {item.caption}
-            </p>
+            <p className="mt-3 text-center font-semibold text-white">{item.title}</p>
             <button
               ref={closeRef}
               type="button"

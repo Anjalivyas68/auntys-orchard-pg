@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Amenities from "@/components/Amenities";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import Rooms from "@/components/Rooms";
+import Amenities from "@/components/Amenities";
 import Gallery from "@/components/Gallery";
 import Location from "@/components/Location";
 import Testimonials from "@/components/Testimonials";
@@ -55,9 +55,9 @@ export default function Home() {
       <Header />
       <main id="main" className="pb-20 lg:pb-0">
         <Hero />
-        <About />
-        <Amenities />
         <WhyChooseUs />
+        <Rooms />
+        <Amenities />
         <Gallery />
         <Location />
         <Testimonials />

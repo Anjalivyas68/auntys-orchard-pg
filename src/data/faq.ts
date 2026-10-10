@@ -1,27 +1,21 @@
+import { content } from "@/config/nav";
+
 /** Edit questions and answers here. Keep answers factual. */
 export const faqs = [
   {
-    q: "What room options are available?",
-    a: "We offer double occupancy and triple sharing rooms depending on availability.",
+    q: "Is this PG suitable for working professionals?",
+    a: "Yes, Aunty's Orchard primarily caters to working professionals looking for comfortable accommodation in Roorkee.",
   },
   {
-    q: "Are meals included?",
-    a: "Residents can enjoy nutritious home-cooked meals. Contact us for the latest meal-plan details.",
+    q: "Is this a boys' PG in Roorkee?",
+    a: "Male working professionals are our primary residents. Women are also welcome, subject to suitable availability.",
   },
   {
-    q: "Is Wi-Fi available?",
-    a: "Yes, high-speed Wi-Fi is available for residents.",
+    q: "Are meals and Wi-Fi available?",
+    a: "Yes. Home-cooked meals and high-speed Wi-Fi are available.",
   },
   {
-    q: "What security measures are in place?",
-    a: "The property includes CCTV surveillance and secure access for residents.",
-  },
-  {
-    q: "Is housekeeping provided?",
-    a: "Yes, regular housekeeping helps maintain cleanliness and hygiene.",
-  },
-  {
-    q: "How can I book a room?",
-    a: "Contact us by phone or WhatsApp, or submit the inquiry form to check availability and schedule a visit.",
+    q: "Where is the PG located?",
+    a: `We are at ${content.locationAddress}, near IIT Roorkee, with markets, cafes and transport close by.`,
   },
 ];

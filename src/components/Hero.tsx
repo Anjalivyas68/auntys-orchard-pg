@@ -1,13 +1,10 @@
 import Image from "next/image";
-import { ShieldCheck, UtensilsCrossed, Wifi, Sparkles } from "lucide-react";
+import { MessageCircle, Star } from "lucide-react";
 import { heroImage } from "@/data/gallery";
+import { whatsappHref } from "@/config/site";
+import { content } from "@/config/nav";
 
-const trust = [
-  { label: "CCTV Security", icon: ShieldCheck },
-  { label: "Home-Cooked Meals", icon: UtensilsCrossed },
-  { label: "High-Speed Wi-Fi", icon: Wifi },
-  { label: "Daily Housekeeping", icon: Sparkles },
-];
+const trust = ["Clean Rooms", "Meals", "Wi-Fi", "CCTV"];
 
 export default function Hero() {
   return (
@@ -25,35 +22,48 @@ export default function Hero() {
 
       <div className="container-page section-pad grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div className="animate-rise">
-          <p className="eyebrow">Comfortable living in Roorkee</p>
-          <h1 className="font-serif text-4xl leading-[1.1] text-forest sm:text-5xl lg:text-[3.5rem]">
-            Your Home Away From Home in Roorkee
+          <p className="eyebrow">Sainik Colony, Roorkee</p>
+          <h1 className="font-serif text-4xl leading-[1.1] text-forest sm:text-5xl lg:text-[3.25rem]">
+            PG in Roorkee for Working Professionals
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-            Safe, comfortable, and fully equipped accommodation designed for students and working
-            professionals seeking a peaceful and convenient place to stay in Roorkee.
+            Furnished rooms, home-cooked meals, fast Wi-Fi, and hassle-free living in Sainik Colony,
+            Roorkee.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#contact" className="btn btn-primary">
-              Book a Visit
-            </a>
-            <a href="#contact" className="btn btn-secondary">
-              Contact Us
-            </a>
-          </div>
-          <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-3 text-[15px] text-ink/85 sm:flex sm:flex-wrap sm:gap-x-6">
-            {trust.map(({ label, icon: Icon }) => (
-              <li key={label} className="flex items-center gap-2">
-                <Icon size={18} className="shrink-0 text-orchard" aria-hidden="true" />
-                {label}
+
+          {/* Trust line */}
+          <ul className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-[15px] font-medium text-ink/90">
+            <li className="flex items-center gap-1.5">
+              <span className="flex" role="img" aria-label="Rated 5 stars on Google">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={16} aria-hidden="true" className="fill-peach text-peach" />
+                ))}
+              </span>
+              Google Rated
+            </li>
+            {trust.map((t) => (
+              <li key={t} className="flex items-center gap-3">
+                <span aria-hidden="true" className="text-forest/30">|</span>
+                {t}
               </li>
             ))}
           </ul>
+
+          <div className="mt-8">
+            <a
+              href={whatsappHref(content.whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary w-full sm:w-auto"
+            >
+              <MessageCircle size={20} aria-hidden="true" /> Check Availability
+            </a>
+          </div>
         </div>
 
         <div className="relative animate-rise [animation-delay:120ms]">
           <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-forest/10 bg-sage shadow-lift">
-            {/* PLACEHOLDER IMAGE: replace /public/images/hero-pg.* with a real photo of the property. */}
+            {/* PLACEHOLDER IMAGE: replace /public/images/hero-pg.* with one strong, real photo of the property. */}
             <Image
               src={heroImage.src}
               alt={heroImage.alt}
@@ -67,10 +77,6 @@ export default function Hero() {
                 Placeholder image
               </span>
             )}
-          </div>
-          <div className="absolute -bottom-4 left-4 rounded-2xl border border-forest/10 bg-white px-4 py-3 text-sm shadow-soft sm:left-8">
-            <span className="font-semibold text-forest">Roorkee, Uttarakhand</span>
-            <span className="block text-muted">Students &amp; working professionals</span>
           </div>
         </div>
       </div>
