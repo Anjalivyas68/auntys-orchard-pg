@@ -32,18 +32,22 @@ export default function Hero() {
           </p>
 
           {/* Trust line */}
-          <ul className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-[15px] font-medium text-ink/90">
-            <li className="flex items-center gap-1.5">
+          {/* Phones: tidy pills that wrap cleanly. Larger screens: one line separated by "|". */}
+          <ul className="mt-6 flex flex-wrap items-center gap-2 text-sm font-medium text-ink/90 sm:gap-x-3 sm:text-[15px]">
+            <li className="flex items-center gap-1.5 rounded-full border border-forest/10 bg-white px-3 py-1.5 sm:border-0 sm:bg-transparent sm:p-0">
               <span className="flex" role="img" aria-label="Rated 5 stars on Google">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} aria-hidden="true" className="fill-peach text-peach" />
+                  <Star key={i} size={15} aria-hidden="true" className="fill-peach text-peach" />
                 ))}
               </span>
               Google Rated
             </li>
             {trust.map((t) => (
-              <li key={t} className="flex items-center gap-3">
-                <span aria-hidden="true" className="text-forest/30">|</span>
+              <li
+                key={t}
+                className="flex items-center gap-3 rounded-full border border-forest/10 bg-white px-3 py-1.5 sm:border-0 sm:bg-transparent sm:p-0"
+              >
+                <span aria-hidden="true" className="hidden text-forest/30 sm:inline">|</span>
                 {t}
               </li>
             ))}

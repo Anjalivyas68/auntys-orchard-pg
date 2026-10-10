@@ -44,7 +44,7 @@ export default function Header() {
       }`}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-[72px]">
-        <a href="#home" className="flex items-center gap-2 font-serif text-xl text-forest">
+        <a href="#home" className="flex min-h-[44px] items-center gap-2 font-serif text-lg text-forest sm:text-xl">
           {logoOk ? (
             // LOGO: upload your logo as public/images/logo.png (transparent PNG works best).
             // If the file is missing, the leaf icon below is shown instead.

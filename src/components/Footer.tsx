@@ -38,7 +38,7 @@ export default function Footer() {
           <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1">
             {navLinks.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="inline-flex min-h-[36px] items-center hover:text-white hover:underline">
+                <a href={l.href} className="inline-flex min-h-[44px] min-w-[44px] items-center hover:text-white hover:underline">
                   {l.label}
                 </a>
               </li>
@@ -48,14 +48,14 @@ export default function Footer() {
 
         <div>
           <p className="font-semibold text-white">Contact</p>
-          <ul className="mt-3 space-y-2">
+          <ul className="mt-2 space-y-0.5">
             <li className="flex items-center gap-2">
               <Phone size={16} aria-hidden="true" />
-              <a href={telHref} className="hover:underline">{siteConfig.phone}</a>
+              <a href={telHref} className="inline-flex min-h-[44px] items-center hover:underline">{siteConfig.phone}</a>
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} aria-hidden="true" />
-              <a href={mailHref} className="hover:underline">{siteConfig.email}</a>
+              <a href={mailHref} className="inline-flex min-h-[44px] items-center break-all hover:underline">{siteConfig.email}</a>
             </li>
             <li className="flex items-start gap-2">
               <MapPin size={16} aria-hidden="true" className="mt-1 shrink-0" />

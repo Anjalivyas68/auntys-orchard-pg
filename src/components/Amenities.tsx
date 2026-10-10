@@ -11,8 +11,8 @@ export default function Amenities() {
 
         <ul className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
           {amenities.map(({ label, icon: Icon }, i) => (
-            <li key={label}>
-              <Reveal delay={(i % 4) * 60}>
+            <li key={label} className="h-full">
+              <Reveal delay={(i % 4) * 60} className="h-full">
                 <div className="card flex h-full flex-col items-center gap-3 !p-5 text-center sm:!p-6">
                   <span className="flex h-14 w-14 items-center justify-center rounded-full bg-sage text-forest">
                     <Icon size={28} aria-hidden="true" />

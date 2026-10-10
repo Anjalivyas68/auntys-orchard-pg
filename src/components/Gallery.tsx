@@ -38,9 +38,10 @@ export default function Gallery() {
           <h2 className="section-title">See Where You&apos;ll Live</h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Phones: 2 columns so the gallery is quick to scroll. Tablet: 2, desktop: 3. */}
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
           {galleryItems.map((g, i) => (
-            <Reveal key={g.title} delay={(i % 3) * 80}>
+            <Reveal key={g.title} delay={(i % 3) * 80} className="h-full">
               <figure className="group overflow-hidden rounded-2xl border border-forest/10 bg-white shadow-soft transition duration-200 hover:-translate-y-1 hover:shadow-lift">
                 <button
                   type="button"
@@ -61,7 +62,7 @@ export default function Gallery() {
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                   {g.isPlaceholder && (
-                    <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-muted">
+                    <span className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-medium text-muted sm:left-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">
                       Placeholder image
                     </span>
                   )}
@@ -69,8 +70,8 @@ export default function Gallery() {
                     <Expand size={16} aria-hidden="true" />
                   </span>
                 </button>
-                <figcaption className="px-5 py-4">
-                  <h3 className="text-lg font-semibold text-forest">{g.title}</h3>
+                <figcaption className="px-3 py-3 sm:px-5 sm:py-4">
+                  <h3 className="text-sm font-semibold leading-snug text-forest sm:text-lg">{g.title}</h3>
                 </figcaption>
               </figure>
             </Reveal>
