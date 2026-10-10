@@ -34,9 +34,9 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     title: "Washrooms",
-    src: "/images/washroom.svg",
+    src: "/images/washroom.jpg",
     alt: "Placeholder illustration for the washrooms",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     title: "Dining Area",
