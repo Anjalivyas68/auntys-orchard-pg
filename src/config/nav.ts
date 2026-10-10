@@ -11,7 +11,7 @@ export const navLinks = [
 
 export const content = {
   // Please verify the spelling of "Janaki Kunj" (the handwritten note was hard to read).
-  locationAddress: "648, Janaki Kunj, Sainik Colony, near Canal View Apartments, Roorkee",
+  locationAddress: "648, Janak Raj Kunj, Sainik Colony, near Canal View Apartments, Roorkee",
   // Shown in the hero and the reviews section. Update if the Google rating changes.
   googleRating: "5.0",
   // Pre-filled WhatsApp message for all "Check Availability" buttons.
