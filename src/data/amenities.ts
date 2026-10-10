@@ -15,7 +15,7 @@ export const amenities: { label: string; icon: LucideIcon }[] = [
   { label: "Wi-Fi", icon: Wifi },
   { label: "Meals", icon: UtensilsCrossed },
   { label: "Housekeeping", icon: Sparkles },
-  { label: "Power Backup", icon: Zap },
+  { label: "Power Backup (Inverter/Diesel Generator)", icon: Zap },
   { label: "24/7 Water", icon: Droplets },
   { label: "Filtered Water", icon: GlassWater },
   { label: "Laundry", icon: Shirt },
