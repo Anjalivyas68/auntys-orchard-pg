@@ -14,17 +14,17 @@ export type GalleryItem = {
 };
 
 export const heroImage = {
-  src: "/images/hero-pg.svg",
+  src: "/images/hero.jpg",
   alt: "Placeholder illustration of a bright, tidy shared room — replace with a real photo of the property",
-  isPlaceholder: true,
+  isPlaceholder: false,
 };
 
 export const galleryItems: GalleryItem[] = [
   {
     title: "Double Sharing Room",
-    src: "/images/double-room.svg",
+    src: "/images/double-room.jpg",
     alt: "Placeholder illustration for the double sharing room",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     title: "Triple Sharing Room",
