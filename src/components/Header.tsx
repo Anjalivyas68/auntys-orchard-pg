@@ -5,9 +5,19 @@ import { Menu, X, Leaf } from "lucide-react";
 import { siteConfig, whatsappHref } from "@/config/site";
 import { navLinks, content } from "@/config/nav";
 
+const LOGO_SRC = "/images/logo.png";
+
 export default function Header() {
+  const [logoOk, setLogoOk] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    // Falls back to the leaf icon if no logo file has been uploaded yet.
+    const probe = new window.Image();
+    probe.onerror = () => setLogoOk(false);
+    probe.src = LOGO_SRC;
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -35,9 +45,22 @@ export default function Header() {
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-[72px]">
         <a href="#home" className="flex items-center gap-2 font-serif text-xl text-forest">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sage text-orchard">
-            <Leaf size={18} aria-hidden="true" />
-          </span>
+          {logoOk ? (
+            // LOGO: upload your logo as public/images/logo.png (transparent PNG works best).
+            // If the file is missing, the leaf icon below is shown instead.
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={LOGO_SRC}
+              alt=""
+              height={40}
+              className="h-10 w-auto max-w-[56px] object-contain"
+              onError={() => setLogoOk(false)}
+            />
+          ) : (
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sage text-orchard">
+              <Leaf size={18} aria-hidden="true" />
+            </span>
+          )}
           {siteConfig.name}
         </a>
 
